@@ -147,6 +147,7 @@
     <Compile Include="Sources\StringEnum.cs" />
     <Compile Include="Sources\UrlValidate.cs" />
     <Compile Include="Sources\XmlSerializer.cs" />
+    <Compile Include="Web\DoubleModelBinder.cs" />
     <Compile Include="Web\ExceptionHandler.cs" />
     <Compile Include="Web\PreventDirectAccessAttribute.cs" />
   </ItemGroup>
