@@ -157,7 +157,8 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) C:\Anxilaris\BinComponents</PostBuildEvent>
+    <PostBuildEvent>copy $(TargetPath) C:\In4hGitHub\Anxilaris\branches\Desarrollo\Source\BackEndAndFrontEnd\Anxilaris\BinComponents
+copy $(TargetPath) C:\In4hGitHub\DMCLink\trunk\BinComponents</PostBuildEvent>
   </PropertyGroup>
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
