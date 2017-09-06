@@ -1,0 +1,5 @@
+Hacer CheckOut en carpeta 
+
+"C:\In4hGitHub\Utils"
+
+De esta manera no tendra problemas con las dlls tomadas de la carpeta BinComponents
