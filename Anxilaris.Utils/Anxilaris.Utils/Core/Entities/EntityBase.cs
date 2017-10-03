@@ -1,12 +1,12 @@
 ﻿namespace Anxilaris.Utils.Core.Entities
 {
     using System;
-    public class EntityBase : ValidatorBase, ICloneable
+    public class EntityBase<T> : ValidatorBase, ICloneable
     {
         /// <summary>
         /// Base Id
         /// </summary>
-        public long Id { get; set; }
+        public T Id { get; set; }
 
         /// <summary>
         /// Item Activw
@@ -27,9 +27,9 @@
         /// </summary>
         /// <typeparam name="T">return type</typeparam>
         /// <returns></returns>
-        public T Clone<T>()
+        public UType Clone<UType>()
         {
-            return (T)this.Clone();
+            return (UType)this.Clone();
         }
     }
 }
