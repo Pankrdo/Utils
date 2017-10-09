@@ -27,7 +27,7 @@
         
         public DALBase()
         {
-            this.stringconnection = ConfigurationManager.ConnectionStrings["DMCLink"].ConnectionString;
+            this.stringconnection = ConfigurationManager.ConnectionStrings["AppConnectionString"].ConnectionString;
            
         }       
 
