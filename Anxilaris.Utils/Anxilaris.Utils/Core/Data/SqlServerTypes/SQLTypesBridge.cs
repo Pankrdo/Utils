@@ -75,7 +75,7 @@
 
             var results = new List<SqlGeography>();
 
-            for (int i = 0; i < area.STNumPoints(); i++)
+            for (int i = 1; i <= area.STNumPoints(); i++)
             {
                 var point = area.STPointN(i);
                
@@ -87,6 +87,11 @@
         protected SqlGeography GetFromText(string WKTgeographicString)
         {
             return SqlGeography.STPointFromText(new SqlChars(WKTgeographicString), 4326);
+        }
+
+        protected SqlGeography GetAreaFromText(string WKTgeographicString)
+        {
+            return SqlGeography.STPolyFromText(new SqlChars(WKTgeographicString), 4326);
         }
     }   
 }
